@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Poppins:wght@100;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grilla">
+      <header id="headerContacto" class="border">
+        <a href="index.html">
+          <img src="imagenes/tshirt1.png" alt="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="tienda.html">TIENDA</a></li>
+            <li><a href="tabla-de-talles.html">TABLAS DE TALLES</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="seccionForm" class="border" class="formulario">
+        <div>
+          <h2>Contacto</h2>
+          <form>            
+              <legend>Tus datos</legend>
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="escriba su nombre"
+                required
+              />
+              <br />
+              <label for="apellido">Apellido</label>
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="escriba su apellido"
+                required
+              />
+              <br />
+              <label for="correo">Correo</label>
+              <input type="text" name="correo" id="correo" required />
+              <br />
+              <label for="Cel">Cel</label>
+              <input type="text" name="cel" id="cel" required />
+              <br>
+              <div>Hombre</div>
+              <input type="radio" name="sexo" value="hombre" />
+              <div>Mujer</div>
+              <input type="radio" name="sexo" value="mujer" />
+              <br />
+              <label for="Como te contactmos">Como te contactamos?</label>
+              <select
+                name="como te contactamos"
+                id="como te contactamos"
+                required
+              >
+                <option value="correo">correo</option>
+                <option value="llamada">llamada</option>
+                <option value="wpp">wpp</option>
+              </select>
+              <br />
+              <label for="tu consulta">Tu consulta</label>
+              <textarea
+                name="tu consulta"
+                id="tu consulta"
+                cols="20"
+                rows="5"
+                required
+              ></textarea>
+              <div>Acepto los terminos y condiciones</div>
+              <input type="checkbox" name="acepto" value="1" required />
+              <br />
+              <input type="submit" value="Enviar formulario" />
+              <input type="Reset" value="Borrar formulario" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <section id="seccionUbi" class="border" class="ubicacion">
+        <div>
+          <h2>Aqui va un mapa</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            temporibus quidem. Aliquam alias quos quia ad odio voluptate aut
+            ullam commodi, blanditiis reiciendis porro in minima quae dolor,
+            ipsam sed facere. Beatae corrupti veritatis odio, repellendus
+            officia aspernatur porro, reprehenderit, ducimus quasi nam veniam
+            error accusantium dicta atque sunt blanditiis!
+          </p>
+        </div>
+      </section>
+      <aside id="asideContacto" class="border">
+        <h2>AQUI VAN FOTOS</h2>
+      </aside>
+      <footer id="footerContacto" class="border">
+          <div>
+            <h3 class="tituloFooterContacto">Buscanos en las redes</h3>
+            <a href="index.html"
+            ><img src="imagenes/tshirt.png" alt="logodemarca"
+          /></a>
+          </div>
+          <div class="redes">
+            <ul>
+              <li>
+                <a href="https://twitter.com/home" target="blank">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=es-la" target="blank"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://es-la.facebook.com/" target="blank">Facebook</a>
+              </li>
+            </ul>          
+          </div>
+        </footer>
+        
+      </body>
+</html>

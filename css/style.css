@@ -1,0 +1,328 @@
+html {
+  font-size: 62, 5%;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  transition: 1s;
+}
+
+header img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.headerGeneral {
+  background-image: linear-gradient(to bottom, grey, white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  color: white;
+  list-style: none;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color: darkred;
+  font-weight: bold;
+}
+
+main .portada {
+  background-image: url("../imagenes/imagen1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  border-radius: 5%;
+}
+
+section .ofertas {
+  background-image: url("../imagenes/imagen2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  border-radius: 5%;
+  margin-top: 2rem;
+  border: 1px solid;
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.tituloOfertas {
+  padding-top: 2rem;
+}
+
+.parrafoOfertas {
+  font-size: 1rem;
+}
+
+.portada h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: "poppins", sans-serif;
+  text-align: center;
+}
+
+section div .tituloTienda {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.seccionCards .cards h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.seccionCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.seccionCards .cards {
+  transition: all 0.5s;
+}
+
+.seccionCards .cards:hover {
+  transform: scale(0.95, 0.95);
+}
+
+.seccionCards .cards p {
+  padding: 0.5rem;
+}
+
+.cards {
+  width: fit-content;
+  border: 3px solid;
+  color: darkred;
+  margin: 1rem;
+  border-radius: 5%;
+  flex: 1 1 20rem;
+}
+
+.cards img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.cards p {
+  text-align: center;
+}
+
+.bodyGeneral {
+  font-family: "poppins", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.footerGeneral {
+  display: flex;
+  background-image: linear-gradient(to top, black, rgb(39, 30, 30));
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.tituloFooter {
+  color: white;
+  font-size: 1rem;
+}
+
+.redes ul {
+  display: flex;
+  padding: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.redes ul li a {
+  display: flex;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.redes ul li a:hover {
+  color: darkred;
+  font-weight: bold;
+}
+
+body .logoInferior {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logoInferior :hover {
+  transition: all 0.5s;
+  transform: scale(1.1, 1.1);
+}
+
+/* Pagina de TIENDA */
+
+.tituloPgTienda {
+  text-align: center;
+  padding: 3rem;
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 5%;
+}
+
+/* Pagina de TIENDA */
+
+/* Pagina Tablas de Talles */
+
+.tituloPgTablas {
+  text-align: center;
+  padding: 3rem;
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 5%;
+  background-image: linear-gradient(to top, black, white);
+}
+
+.tituloTablas {
+  text-align: center;
+  padding: 4rem 3rem 2rem 3rem;
+}
+
+table {
+  border: 1px solid navy;
+}
+
+.tablasEimagen {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.imgTablas {
+  width: 250px;
+  height: 300px;
+  border-radius: 5%;
+}
+
+.tituloYtabla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Pagina Tablas de Talles */
+
+/* Pagina de Contacto */
+
+body {
+  background-color: rgb(168, 33, 33);
+}
+
+.border {
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+}
+
+.grilla {
+  display: grid;
+  padding: 0.5rem;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-columns: 60% 40%;
+  grid-gap: 5px;
+  height: 100vh;
+  grid-template-areas:
+    "headerContacto headerContacto"
+    "seccionForm asideContacto"
+    "seccionUbi asideContacto"
+    "footerContacto footerContacto";
+}
+#headerContacto {
+  grid-area: headerContacto;
+}
+
+#seccionForm {
+  grid-area: seccionForm;
+}
+
+#seccionUbi {
+  grid-area: seccionUbi;
+}
+
+#asideContacto {
+  grid-area: asideContacto;
+}
+
+#seccionForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2rem;
+}
+legend {
+  padding: 2rem;
+}
+
+#footerContacto {
+  grid-area: footerContacto;
+}
+
+#footerContacto {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tituloFooterContacto {
+  color: black;
+}
+
+/* Pagina de Contacto */
+
+/* Pagina de FAQ */
+
+.tituloPgFaq {
+  text-align: center;
+  padding: 3rem;
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 5%;
+  background-image: linear-gradient(to top, black, white);
+}
+
+/* Pagina de FAQ */
